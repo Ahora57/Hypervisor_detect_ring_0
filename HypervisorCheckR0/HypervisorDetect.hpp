@@ -71,7 +71,7 @@ namespace DetectHyp
 			avg += (tick2 - tick1);
 		}
 		avg /= 2500;  
-		return (avg > 500 || 25 > avg) ; 
+		return (avg > 500) || (25 > avg) ; 
 	}
 
 	 
