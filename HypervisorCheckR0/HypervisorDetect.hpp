@@ -1,5 +1,5 @@
 #pragma once
-#include "NtApiDef.h"
+#include "Struct.h"
  
 
 /*
