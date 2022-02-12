@@ -162,17 +162,7 @@ namespace DetectHyp
 	}
 
 	
-	 DWORD64 very_lazy_hypervisor()
-	{
-		/*
-		if IA32_P5_MC_ADDR_MSR or SMI_COUNT_MSR just return 0,then this hypervisor very lazy
-		
-		*/
-		int cpuid[4]{ -1 };
-		auto smi_count = __readmsr(SMI_COUNT_MSR);
-		auto p5_mc_addr = __readmsr(IA32_P5_MC_ADDR_MSR);
-		return (smi_count == 0 ) &&   (p5_mc_addr ==0);
-	}
+	
 	 
 	
 }
