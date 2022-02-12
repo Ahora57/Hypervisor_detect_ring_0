@@ -14,8 +14,7 @@ NTSTATUS DriverEntry(IN PDRIVER_OBJECT pDriverObject, IN PUNICODE_STRING pRegist
 	DbgPrint("[Bad lev1oto] Time attack with APERF ->\t 0x%p\n", DetectHyp::time_attack_APERF());
 	DbgPrint("[Bad lev1oto] Time attack with MPERF->\t 0x%p\n", DetectHyp::time_attack_MPERF());
 	DbgPrint("[Bad lev1oto] LBR is virtualizate ->\t 0x%p\n", DetectHyp::lbr_is_virtulazed());
-	DbgPrint("[Bad lev1oto] LBR stack check ->\t 0x%p\n", DetectHyp::lbr_stask_is_virtulazed());
-	DbgPrint("[Bad lev1oto] Read non zero value ->\t 0x%p\n", DetectHyp::very_lazy_hypervisor());
+	DbgPrint("[Bad lev1oto] LBR stack check ->\t 0x%p\n", DetectHyp::lbr_stask_is_virtulazed()); 
 	
 	return STATUS_SUCCESS;
 }
